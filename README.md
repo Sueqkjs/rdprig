@@ -1,6 +1,6 @@
 # RDPRig
 
-[Englsih Version](README-en.md)
+[English Version](README-en.md)
 
 ## これは何？
 
