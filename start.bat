@@ -3,14 +3,20 @@
 net session >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-  echo processing....
-  @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
-  cinst git
-  git clone https://github.com/Sueqkjs/rdprig
+  echo processing...
+  mkdir rdprig
   cd rdprig
+  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/xmrig.exe
+  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/xmrig-asm.lib
+  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/WinRing0x64.sys
+  
+  :: Change this!
+  :: https://raw.githubusercontent.com/[Your GitHub username]/rdprig/master/config.json
+  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/config.json
+  
   xmrig.exe
 ) else (
-  echo kanrisya de zikkou siro
+  echo kanrisya de zikkou siro hage
 )
 
 pause
