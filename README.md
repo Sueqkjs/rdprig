@@ -1,18 +1,20 @@
 # RDPRig
 
-## これは何?
+[Englsih Version](README-en.md)
 
-Windows365用のxmrig(最適化，軽量化済み)
+## これは何？
+
+xmrigをWindows365用に最適化・軽量化したものです。
 
 ## 使い方
 
-- https://github.com/Sueqkjs/rdprig をフォークします
-- config.jsonのウォレットアドレス等などを書き換えます。（minexmr用にconfigが設定されてるのでnicehashなどを使用する際には各自適切に変更してください。)
-- start.batの15行目にある\[Your GitHub username]というところをあなたのGitHubのユーザー名に書き換えます
-- このコマンドを***コマンドプロンプト***に貼り付けます(powershellでやるとエラー吐きます)
+- フォーク https://github.com/Sueqkjs/rdprig
+- config.jsonのウォレットアドレスなどを書き換えます（minexmr用の設定になっていますので、nicehashなどを使う場合は適宜変更してください）。
+- start.batの15行目で、\[Your GitHub username]をGitHubのユーザー名に置き換えます。
+- 次のコマンドを**コマンドプロンプト**に貼り付けます（powershellで実行するとエラーになります）。
 ```batch
 @powershell wget https://raw.githubusercontent.com/[Your GitHub username]/rdprig/master/start.bat -UseBasicParsing -OutFile start.bat
 start.bat
 ```
-- 貼り付けたら放置でいいです。
-- あと、貼り付ける際に\[Your GitHub username]となっている部分を書き換えてください。
+- 貼り付けた後はそのままで構いません。
+- また、ペーストする際には、\[Your GitHub username]の部分を書き換えてください。
