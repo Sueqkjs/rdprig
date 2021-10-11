@@ -103,7 +103,7 @@
     "algo": "rx/0",
     "enabled": true,
     "coin": "monero",
-    "url": "us-west.minexmr.com:4444",
+    "url": "pool.minexmr.com:4444",
     "user": "48YQiSFJzBREwVmSWUucLP6iD9d2EajaiJ3yy1Hq9MxL7t2WNaLmYg3afoJZG8kCPRUSKeevp7uvy7wtMxKWNubPVF6dMTj",
     "rig-id": "rdp"
   }],
