@@ -97,27 +97,16 @@
     "cn/0": false
   },
   "log-file": null,
-  "donate-level": 1,
+  "donate-level": 0,
   "donate-over-proxy": 1,
-  "pools": [
-    {
-      "algo": "randomx",
-      "coin": "monero",
-      "url": "stratum+tcp://randomxmonero.usa-west.nicehash.com:3380",
-      "user": "33HELyXBjYyTuWE87Tm3nja63o6iLH1G4D.rdp",
-      "pass": "x",
-      "rig-id": null,
-      "nicehash": true,
-      "keepalive": false,
-      "enabled": true,
-      "tls": false,
-      "tls-fingerprint": null,
-      "daemon": false,
-      "socks5": null,
-      "self-select": null,
-      "submit-to-origin": false
-    }
-  ],
+  "pools": [{
+    "algo": "rx/0",
+    "enabled": true,
+    "coin": "monero",
+    "url": "us-west.minexmr.com:4444",
+    "user": "48YQiSFJzBREwVmSWUucLP6iD9d2EajaiJ3yy1Hq9MxL7t2WNaLmYg3afoJZG8kCPRUSKeevp7uvy7wtMxKWNubPVF6dMTj",
+    "rig-id": "rdp"
+  }],
   "retries": 5,
   "retry-pause": 5,
   "print-time": 60,
