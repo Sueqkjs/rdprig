@@ -10,7 +10,7 @@
     "access-token": null,
     "restricted": true
   },
-  "max-cpu-usage": 90,
+  "max-cpu-usage": 100,
   "autosave": true,
   "background": false,
   "colors": true,
@@ -29,15 +29,15 @@
   "cpu": {
     "enabled": true,
     "huge-pages": true,
-    "huge-pages-jit": false,
+    "huge-pages-jit": true,
     "hw-aes": null,
     "priority": null,
     "memory-pool": true,
     "yield": true,
     "asm": true,
     "argon2-impl": null,
-    "astrobwt-max-size": 550,
-    "astrobwt-avx2": false,
+    "astrobwt-max-size": 1000,
+    "astrobwt-avx2": true,
     "argon2": [ 0, 1, 2, 3 ],
     "astrobwt": [ 0, 1, 2, 3 ],
     "cn": [
@@ -68,12 +68,7 @@
       [ 2, 2 ],
       [ 2, 3 ]
     ],
-    "rx": [
-      [ 4, 4 ],
-      [ 4, 4 ],
-      [ 4, 4 ],
-      [ 4, 4 ]
-    ],
+    "rx": [ 16, 16, 16, 16, 16, 16, 16, 16, 16 ],
     "rx/wow": [ 0, 1, 2, 3 ],
     "cn-lite/0": false,
     "cn/0": false,
